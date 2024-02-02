@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+h1, h2, h3, h4, h5 {
+  color: purple;
+}
+
+.purple {
+  color: purple !important;
+  border-color: purple !important;
+}
+
+.purple:hover {
+  border-color: purple !important;
+  background-color: purple !important;
+  color: white !important;
+}

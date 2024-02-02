@@ -12,20 +12,20 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light" style="background-color: purple;">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href="/" class="navbar-brand" style="color: darkgrey";>Restro-Review</a>
+          <a href="/" class="navbar-brand" style="color: white";>Restro-Review</a>
         </div>
         <div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/restaurant/new" class="btn btn-outline-secondary">New Restaurant</a></li>
+          <ul class="nav navbar-nav navbar-right p-2">
+            <li><a href="/restaurants/new" class="btn btn-outline-light">New Restaurant</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-    <%= yield %>
+      <%= yield %>
     </div>
   </body>
 </html>

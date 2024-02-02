@@ -1,0 +1,23 @@
+<br>
+<%= render @restaurant %>
+
+<p><strong>Reviews</strong></p>
+<div>
+  <ul class="list-group">
+  <% @restaurant.reviews.each do |review| %>
+    <li class="list-group-item">
+      <p>
+        <% review.rating.times do %>
+          <%= "⭐" %>
+        <% end %>
+      </p>
+      <p><%= "-" + review.content %></p>
+    </li>
+  <% end %>
+  </ul>
+</div>
+<br>
+
+<p>
+  <%= link_to "Add a review", new_restaurant_review_path(params[:id]), class: "btn btn-sm btn-outline-secondary" %>
+</p>
